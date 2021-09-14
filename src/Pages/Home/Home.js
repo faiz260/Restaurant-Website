@@ -3,6 +3,7 @@ import Hero from "../../Components/Hero/Hero";
 import "./Home.css";
 import Card from "../../Components/Cards/BodyCard";
 import Tabs from "../../Components/Tabs/Tabs";
+import Footer from "../../Components/Footer/Footer";
 
 function Home() {
   return (
@@ -37,6 +38,7 @@ function Home() {
       <div className="tabs_div">
         <Tabs />
       </div>
+      <Footer />
     </div>
   );
 }

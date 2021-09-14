@@ -4,70 +4,52 @@ import { Carousel } from "react-responsive-carousel";
 import MenuCard from "../Cards/MenuCard";
 import "./Carousel.css";
 
-function MenuCarousel() {
+function MenuCarousel({ data }) {
+  console.log(data);
   return (
     <div>
-      <Carousel showStatus={false} showIndicators={false}>
+      <Carousel showStatus={false} showIndicators={false} showThumbs={false}>
         <div className="carousel_div">
-          <MenuCard
-            item="Sandwich"
-            desc="we use freshly grounded ingredients to maintain the quality"
-            price="$15"
-            img="/Images/img15.jpg"
-          />
-          <MenuCard
-            item="Srumbled Eggs"
-            desc="we use freshly grounded ingredients to maintain the quality"
-            price="$10"
-            img="/Images/img14.jpg"
-          />
-          <MenuCard
-            item="Pan Cakes"
-            desc="we use freshly grounded ingredients to maintain the quality"
-            price="$18"
-            img="/Images/img13.jpg"
-          />
+          {data.slice(0, 3).map((data) => {
+            return (
+              <MenuCard
+                item={data.item}
+                desc={data.desc}
+                price={data.price}
+                img={data.img}
+              />
+            );
+          })}
         </div>
-        <div className="carousel_div">
-          <MenuCard
-            item="Sandwich"
-            desc="we use freshly grounded ingredients to maintain the quality"
-            price="$15"
-            img="/Images/img15.jpg"
-          />
-          <MenuCard
-            item="Srumbled Eggs"
-            desc="we use freshly grounded ingredients to maintain the quality"
-            price="$10"
-            img="/Images/img14.jpg"
-          />
-          <MenuCard
-            item="Pan Cakes"
-            desc="we use freshly grounded ingredients to maintain the quality"
-            price="$18"
-            img="/Images/img13.jpg"
-          />
-        </div>
-        <div className="carousel_div">
-          <MenuCard
-            item="Sandwich"
-            desc="we use freshly grounded ingredients to maintain the quality"
-            price="$15"
-            img="/Images/img15.jpg"
-          />
-          <MenuCard
-            item="Srumbled Eggs"
-            desc="we use freshly grounded ingredients to maintain the quality"
-            price="$10"
-            img="/Images/img14.jpg"
-          />
-          <MenuCard
-            item="Pan Cakes"
-            desc="we use freshly grounded ingredients to maintain the quality"
-            price="$18"
-            img="/Images/img13.jpg"
-          />
-        </div>
+        {data.length > 3 ? (
+          <div className="carousel_div">
+            {data.slice(3, 6).map((data) => {
+              return (
+                <MenuCard
+                  item={data.item}
+                  desc={data.desc}
+                  price={data.price}
+                  img={data.img}
+                />
+              );
+            })}
+          </div>
+        ) : null}
+
+        {data.length > 6 ? (
+          <div className="carousel_div">
+            {data.slice(6, 9).map((data) => {
+              return (
+                <MenuCard
+                  item={data.item}
+                  desc={data.desc}
+                  price={data.price}
+                  img={data.img}
+                />
+              );
+            })}
+          </div>
+        ) : null}
       </Carousel>
     </div>
   );

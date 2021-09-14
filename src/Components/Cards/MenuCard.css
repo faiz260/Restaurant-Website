@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top: 1rem;
 }
 .image {
   width: 10rem;
@@ -43,4 +44,15 @@
   font-family: Poppins;
   width: 90%;
   font-size: 0.85rem;
+}
+
+@media (max-width: 900px) {
+  .menu_card {
+    width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .menu_card {
+    width: 100%;
+  }
 }
