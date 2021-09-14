@@ -1,0 +1,46 @@
+.hero {
+  background-image: url(../../Assets/burger\ banner\ 1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 38rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: -1;
+}
+.title {
+  font-family: Paytone One;
+  color: white;
+  font-size: 4rem;
+  text-transform: uppercase;
+  width: 50%;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.subtitle {
+  color: white;
+  font-family: poppins;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 750px) {
+  .title {
+    font-size: 3.5rem;
+    width: 70%;
+  }
+  .subtitle {
+    font-size: 0.85rem;
+  }
+}
+@media (max-width: 500px) {
+  .title {
+    font-size: 2.8rem;
+    width: 90%;
+  }
+  .subtitle {
+    font-size: 0.7rem;
+    width: 90%;
+    text-align: center;
+  }
+}
