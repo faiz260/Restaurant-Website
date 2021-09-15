@@ -10,6 +10,10 @@
   flex-direction: column;
   margin-top: 1rem;
 }
+.menu_card:hover{
+  transform: scale(1.1, 1.1);
+  transition: 0.5s  ease-in-out ;
+}
 .image {
   width: 10rem;
   height: 10rem;

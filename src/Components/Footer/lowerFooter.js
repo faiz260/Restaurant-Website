@@ -8,7 +8,7 @@ function LowerFooter() {
       <div className="lfooter_section">
         <p>
           {" "}
-          Copyright ©2021 All rights reserved | This page is developed by{" "}
+          Copyright ©2021 All rights reserved | This website is developed by{" "}
           <a href="https://www.faizshahnawaz.com/"> Faiz Shahnawaz </a>
         </p>
       </div>

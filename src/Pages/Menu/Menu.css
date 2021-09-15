@@ -14,12 +14,13 @@
 }
 .menu_tab_title {
   margin: auto;
+  text-transform: uppercase;
 }
 .menu_tab_desc {
   margin: auto;
 }
-@media(max-width: 750px){
-  .menu_tab_desc{
+@media (max-width: 750px) {
+  .menu_tab_desc {
     width: 80%;
   }
 }

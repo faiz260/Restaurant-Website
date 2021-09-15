@@ -1,0 +1,30 @@
+.gallery {
+  background: #ff5200;
+}
+.img_gallery {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.img_card {
+  width: 16rem;
+  height: 14rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 1rem;
+  border-radius: 10px;
+  box-shadow: 2px 4px 8px 4px #00000066;
+}
+.img_card:hover {
+  background-size: 150%;
+  box-shadow: 2px 4px 8px 8px #00000066;
+}
+@media (max-width: 610px) {
+  .img_card {
+    width: 90%;
+    height: 18rem;
+  }
+}
