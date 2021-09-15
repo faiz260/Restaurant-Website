@@ -1,0 +1,119 @@
+.contact {
+  background: #ff5200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.details {
+  width: 20rem;
+  height: 20rem;
+  padding: 5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.icon_div {
+  background: #f2c64d;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon {
+  width: 1.5rem;
+  height: 1.5em;
+}
+.info {
+  width: 20rem;
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.info_title {
+  color: white;
+  font-family: Paytone One;
+  text-transform: uppercase;
+}
+.info_subtitle {
+  color: white;
+  font-family: Poppins;
+  font-size: 0.8rem;
+  text-transform: lowercase;
+}
+.info > div {
+  margin-left: 1rem;
+  width: 100%;
+}
+.contact_form {
+  width: 40rem;
+  height: 20rem;
+  padding: 5rem 2rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.contact_form > div {
+  display: flex;
+  width: 95%;
+  justify-content: space-between;
+}
+.contact_form > div > input {
+  background-color: inherit;
+  width: 40%;
+  height: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.679);
+  border-radius: 20px;
+  padding: 0 1rem;
+  font-size: 0.8rem;
+  color: white;
+}
+.contact_form > input {
+  background-color: inherit;
+  width: 90%;
+  height: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.679);
+  border-radius: 20px;
+  padding: 0 1rem;
+  font-size: 0.8rem;
+  color: black;
+}
+.contact_form > textarea {
+  background-color: inherit;
+  width: 90%;
+  height: 35rem;
+  height: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.679);
+  border-radius: 20px;
+  padding: 0 1rem;
+  font-size: 0.8rem;
+  color: white;
+  text-align: center;
+}
+@media (max-width: 900px) {
+  .contact {
+    flex-direction: column;
+  }
+  .details {
+    width: 90%;
+  }
+  .contact_form {
+    width: 90%;
+    padding-top: 0;
+  }
+}
+@media (max-width: 500px) {
+  .contact_form > div {
+    flex-direction: column;
+    height: 6rem;
+    width: 100%;
+  }
+  .contact_form > div > input {
+    width: 90%;
+  }
+}
