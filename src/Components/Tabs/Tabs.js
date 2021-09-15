@@ -1,6 +1,5 @@
 import React from "react";
 import { Tabs, TabLink, TabContent } from "react-tabs-redux";
-import Button from "../explore_button/ExploreButton";
 import "./Tabs.css";
 import MenuCarousel from "../Carousel/Carousel";
 
@@ -87,16 +86,6 @@ const drinks = [
 function MenuTabs() {
   return (
     <div>
-      <div className="tabs_header">
-        <div>
-          <h1 className="tabs_title">Our Delicacies</h1>
-          <p className="tabs_desc">
-            Get the taste of our authentic and diverse menu with so many options
-            to pick from.
-          </p>
-        </div>
-        <Button color="#F2C64D" text="Full Menu" />
-      </div>
       <Tabs
         className="tab"
         activeLinkStyle={{

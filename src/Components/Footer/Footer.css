@@ -4,6 +4,7 @@
   justify-content: space-around;
   padding: 2rem;
   flex-wrap: wrap;
+  background-color: #f2c64d;
 }
 .footer_section {
   height: 15rem;

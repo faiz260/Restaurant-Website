@@ -1,0 +1,25 @@
+.menu {
+  background: #ff5200;
+}
+.menu_tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.menu_tab_header {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.menu_tab_title {
+  margin: auto;
+}
+.menu_tab_desc {
+  margin: auto;
+}
+@media(max-width: 750px){
+  .menu_tab_desc{
+    width: 80%;
+  }
+}

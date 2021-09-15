@@ -44,4 +44,7 @@
     width: 100%;
     text-align: center;
   }
+  .body_head {
+    text-align: center;
+  }
 }

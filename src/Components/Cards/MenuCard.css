@@ -44,6 +44,7 @@
   font-family: Poppins;
   width: 90%;
   font-size: 0.85rem;
+  text-align: center;
 }
 
 @media (max-width: 900px) {
