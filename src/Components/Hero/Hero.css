@@ -2,6 +2,7 @@
   background-image: url(../../Assets/burger\ banner\ 1.png);
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   height: 38rem;
   display: flex;
   align-items: center;
